@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 381.67 309.43">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: #72bedb;
+      }
+
+      .cls-3 {
+        fill: #f7993a;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-6 {
+        fill: #ef8c25;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="51.18" y1="181.98" x2="230.25" y2="181.98" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a8411a"/>
+      <stop offset="1" stop-color="#ee5f31"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="282.02" y1="112.54" x2="381.67" y2="112.54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2b6a84"/>
+      <stop offset="1" stop-color="#57afd1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="259.64" y1="309.43" x2="259.64" y2="134.92" gradientUnits="userSpaceOnUse">
+      <stop offset=".76" stop-color="#318fb6"/>
+      <stop offset=".91" stop-color="#2d7897"/>
+      <stop offset="1" stop-color="#2b6a84"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <polygon class="cls-3" points="107.86 96.45 74.69 159.6 51.18 204.36 0 204.36 23.51 159.6 56.68 96.45 107.86 96.45"/>
+    <polygon class="cls-2" points="282.02 90.16 282.02 134.92 169.27 134.92 135.48 96.45 129.96 90.16 282.02 90.16"/>
+    <polygon class="cls-6" points="134.79 45.18 118.2 76.77 107.86 96.45 56.68 96.45 86.17 40.3 107.34 0 134.79 45.18"/>
+    <polygon class="cls-5" points="230.25 204.36 51.18 204.36 74.69 159.6 190.94 159.6 230.25 204.36"/>
+    <rect class="cls-1" x="282.02" y="90.16" width="99.65" height="44.76"/>
+    <polygon class="cls-4" points="282.02 134.92 282.02 227.71 237.26 309.43 237.26 134.92 282.02 134.92"/>
+  </g>
+</svg>

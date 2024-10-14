@@ -29,4 +29,37 @@
         </div>
     </div>
     <!--/ Statistics -->
+
+    {{-- Contact Person --}}
+    <div class="row">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <h5 class="mb-3">Informasi</h5>
+                            <li>Website ini masih tahap pengembangan.</li>
+                            <li>Apabila terdapat bug bisa langsung hubungi admin.</li>
+                            <li>Jika ada saran terkait fitur, game dll bisa langsung hubungi admin.</li>
+                            <li>gunakan dengan bijak, dilarang spam</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="mb-3">Contact Person</h5>
+                        <span class="d-block mb-2">
+                            <a href="https://www.facebook.com/ramaadit1234567" target="_blank">Facebook</a>
+                        </span>
+                        <span class="d-block mb-2">
+                            <a href="https://wa.me/62895396561111" target="_blank">Whatsapp</a>
+                        </span>
+                        <span class="d-block mb-2">
+                            <a href="https://www.instagram.com/radhityas_" target="_blank">Instagram</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    {{-- / Contact Person --}}
 @endsection
