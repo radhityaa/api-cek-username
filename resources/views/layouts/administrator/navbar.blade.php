@@ -57,7 +57,8 @@
                     </a>
                 </li>
                 <li class="menu-item {{ request()->is('api/documentations') ? 'active' : '' }}">
-                    <a href="{{ route('api.documentation') }}" class="menu-link">
+                    <a href="https://www.postman.com/restless-satellite-735972/workspace/public/collection/26190578-59d47fd5-6662-4eb5-ab81-1889a04c2a3c?action=share&creator=26190578"
+                        class="menu-link" target="__blank">
                         <div>Dokumentasi</div>
                     </a>
                 </li>

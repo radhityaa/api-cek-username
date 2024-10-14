@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Game;
 use App\Models\History;
 use App\Models\User;
 use Illuminate\Support\Facades\Http;
@@ -16,6 +17,7 @@ class CekAccountController extends Controller
         $apiId = $request->header('API-ID');
 
         $user = User::where('api_key', $apiKey)->where('api_id', $apiId)->first();
+        $game = Game::where('slug', 'mobile-legends')->first();
 
         $playerId = $request->playerId;
         $zone = $request->zone;
@@ -45,7 +47,7 @@ class CekAccountController extends Controller
 
         History::create([
             'user_id' => $user->id,
-            'game' => $result['confirmationFields']['productName'],
+            'game_id' => $game->id,
             'playerId' => $playerId,
             'zone' => $zone,
             'username' => $result['confirmationFields']['username'],

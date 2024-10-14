@@ -20,33 +20,35 @@
                 @endrole
             </div>
             <div class="card-body">
-                <div class="row gy-4 mb-4">
+                <div class="row mb-4">
                     @foreach ($games as $item)
                         <div class="col-sm-6 col-lg-3">
-                            <div class="card h-100 border p-2 shadow-none">
+                            <div class="card h-100 border shadow-none">
                                 <div class="rounded-2 mb-3 text-center">
                                     <a href="#"><img class="img-fluid"
                                             src="{{ asset('assets/img/games/' . $item->picture) }}"
-                                            alt="{{ $item->name }}" /></a>
+                                            alt="{{ $item->name }}" style="width: 100%; height: 200px;" /></a>
                                 </div>
-                                <div class="card-body p-3 pt-2">
+                                <div class="card-body pt-2" style="padding-left: 10px; padding-right: 10px;">
                                     <div class="d-flex justify-content-between align-items-center mb-3">
                                         <span
                                             class="badge {{ $item->status === 'Normal' ? 'bg-success' : ($item->status === 'Gangguan' ? 'bg-warning' : 'bg-danger') }}">{{ $item->status }}</span>
-                                        <span class="text-muted">(0 Pengguna)</span>
+                                        <span class="text-muted">({{ $item->histories_count }}x Digunakan)</span>
                                     </div>
                                     <a href="#" class="h5">{{ $item->name }}</a>
                                     <p class="mt-2">{{ $item->description }}
                                     </p>
                                     <p class="d-flex align-items-center"><i class="ti ti-clock mt-n1 me-2"></i>Updated
                                         {{ $item->updated_at->diffForHumans() }}</p>
-                                    <div class="w-100 text-nowrap gap-2">
-                                        {{-- <a class="app-academy-md-50 btn btn-label-primary d-flex align-items-center"
-                                            href="#">
-                                            <span class="me-2">Coba</span><i
-                                                class="ti ti-chevron-right scaleX-n1-rtl ti-sm"></i>
-                                        </a> --}}
-                                    </div>
+                                    @role('admin')
+                                        <div class="w-100 text-nowrap gap-2">
+                                            <a class="app-academy-md-50 btn btn-label-warning d-flex align-items-center"
+                                                href="#">
+                                                <span class="me-2">Edit</span><i
+                                                    class="ti ti-chevron-right scaleX-n1-rtl ti-sm"></i>
+                                            </a>
+                                        </div>
+                                    @endrole
                                 </div>
                             </div>
                         </div>

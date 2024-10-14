@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('histories', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
-            $table->string('game');
+            $table->foreignId('game_id')->constrained('games');
             $table->string('playerId')->nullable();
             $table->string('zone')->nullable();
             $table->string('username');

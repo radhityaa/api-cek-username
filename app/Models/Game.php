@@ -10,4 +10,9 @@ class Game extends Model
     use HasFactory;
 
     protected $fillable = ['name', 'slug', 'description', 'status', 'picture'];
+
+    public function histories()
+    {
+        return $this->hasMany(History::class);
+    }
 }

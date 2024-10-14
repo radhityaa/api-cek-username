@@ -9,5 +9,10 @@ class History extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['user_id', 'game', 'playerId', 'zone', 'username'];
+    protected $fillable = ['user_id', 'game_id', 'playerId', 'zone', 'username'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

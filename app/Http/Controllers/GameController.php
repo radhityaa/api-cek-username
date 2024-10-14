@@ -13,7 +13,8 @@ class GameController extends Controller
     {
         $title = 'Daftar Game';
 
-        $games = Game::latest()->get();
+        $games = Game::withCount('histories')->latest()->get();
+
         return view('games.index', compact('title', 'games'));
     }
 
