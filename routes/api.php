@@ -7,5 +7,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('verifyApiKey')->group(function () {
     Route::prefix('v1/cek-account')->group(function () {
         Route::post('mobile-legends', [CekAccountController::class, 'mobileLegends']);
+        Route::post('free-fire', [CekAccountController::class, 'freeFire']);
     });
 });

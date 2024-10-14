@@ -27,7 +27,7 @@
                                 <div class="rounded-2 mb-3 text-center">
                                     <a href="#"><img class="img-fluid"
                                             src="{{ asset('assets/img/games/' . $item->picture) }}"
-                                            alt="{{ $item->name }}" style="width: 100%; height: 200px;" /></a>
+                                            alt="{{ $item->name }}" style="width: 100%; height: 250px;" /></a>
                                 </div>
                                 <div class="card-body pt-2" style="padding-left: 10px; padding-right: 10px;">
                                     <div class="d-flex justify-content-between align-items-center mb-3">
@@ -41,12 +41,20 @@
                                     <p class="d-flex align-items-center"><i class="ti ti-clock mt-n1 me-2"></i>Updated
                                         {{ $item->updated_at->diffForHumans() }}</p>
                                     @role('admin')
-                                        <div class="w-100 text-nowrap gap-2">
+                                        {{-- <div class="w-100 text-nowrap gap-2">
                                             <a class="app-academy-md-50 btn btn-label-warning d-flex align-items-center"
                                                 href="#">
                                                 <span class="me-2">Edit</span><i
                                                     class="ti ti-chevron-right scaleX-n1-rtl ti-sm"></i>
                                             </a>
+                                        </div> --}}
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <button class="w-100 btn btn-warning">Edit</button>
+                                            </div>
+                                            <div class="col-6">
+                                                <button class="w-100 btn btn-danger">Hapus</button>
+                                            </div>
                                         </div>
                                     @endrole
                                 </div>
