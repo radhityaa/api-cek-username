@@ -30,6 +30,7 @@ class HomeController extends Controller
         $games = $games = Game::withCount(['histories' => function ($q) {
             $q->where('user_id', Auth::user()->id);
         }])
+            ->orderBy('histories_count', 'desc')
             ->latest()
             ->get();
 
