@@ -56,6 +56,7 @@
                     @endforeach
                 </div>
 
+
                 {{-- <nav aria-label="Page navigation" class="d-flex align-items-center justify-content-center">
                     <ul class="pagination">
                         <li class="page-item prev">
