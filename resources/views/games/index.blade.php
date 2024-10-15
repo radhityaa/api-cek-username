@@ -41,13 +41,6 @@
                                     <p class="d-flex align-items-center"><i class="ti ti-clock mt-n1 me-2"></i>Updated
                                         {{ $item->updated_at->diffForHumans() }}</p>
                                     @role('admin')
-                                        {{-- <div class="w-100 text-nowrap gap-2">
-                                            <a class="app-academy-md-50 btn btn-label-warning d-flex align-items-center"
-                                                href="#">
-                                                <span class="me-2">Edit</span><i
-                                                    class="ti ti-chevron-right scaleX-n1-rtl ti-sm"></i>
-                                            </a>
-                                        </div> --}}
                                         <div class="row">
                                             <div class="col-6">
                                                 <button class="w-100 btn btn-warning">Edit</button>
