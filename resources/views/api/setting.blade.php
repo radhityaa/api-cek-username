@@ -5,62 +5,60 @@
 @endpush
 
 @section('content')
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="card">
-                <div class="card-header">
-                    <h5>Setting API</h5>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <form action="" method="POST" id="form-generate">
-                            <div class="mb-4">
-                                <label for="api_key" class="form-label">API Key</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" id="api_key" name="api_key"
-                                        value="{{ Auth::user()->api_key }}" disabled>
-                                    <button class="btn btn-outline-primary waves-effect" type="button" id="apiKeyCopy"><i
-                                            class="fa-regular fa-copy"></i></button>
-                                </div>
+    <div class="col-lg-6 mb-2">
+        <div class="card">
+            <div class="card-header">
+                <h5>Setting API</h5>
+            </div>
+            <div class="card-body">
+                <div>
+                    <form action="" method="POST" id="form-generate">
+                        <div class="mb-4">
+                            <label for="api_key" class="form-label">API Key</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="api_key" name="api_key"
+                                    value="{{ Auth::user()->api_key }}" disabled>
+                                <button class="btn btn-outline-primary waves-effect" type="button" id="apiKeyCopy"><i
+                                        class="fa-regular fa-copy"></i></button>
                             </div>
+                        </div>
 
-                            <div class="mb-4">
-                                <label for="api_id" class="form-label">API ID</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" id="api_id" name="api_id"
-                                        value="{{ Auth::user()->api_id }}" disabled>
-                                    <button class="btn btn-outline-primary waves-effect" type="button" id="apiIdCopy"><i
-                                            class="fa-regular fa-copy"></i></button>
-                                </div>
+                        <div class="mb-4">
+                            <label for="api_id" class="form-label">API ID</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="api_id" name="api_id"
+                                    value="{{ Auth::user()->api_id }}" disabled>
+                                <button class="btn btn-outline-primary waves-effect" type="button" id="apiIdCopy"><i
+                                        class="fa-regular fa-copy"></i></button>
                             </div>
+                        </div>
 
-                            <div class="mb-4">
-                                <button type="submit" class="btn btn-success waves-effect waves-light btn-generate"
-                                    id="generate" name="generate">
-                                    <span class="ti-xs ti ti-arrows-shuffle me-1"></span>Generate
-                                </button>
-                                <x-button-loading />
-                            </div>
-                        </form>
-                    </div>
+                        <div class="mb-4">
+                            <button type="submit" class="btn btn-success waves-effect waves-light btn-generate"
+                                id="generate" name="generate">
+                                <span class="ti-xs ti ti-arrows-shuffle me-1"></span>Generate
+                            </button>
+                            <x-button-loading />
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="col-lg-6">
-            <div class="card">
-                <div class="card-header">
-                    <h5>Perhatian!</h5>
-                </div>
-                <div class="card-body">
-                    <ul>
-                        <li>Demi keamanan akun Anda, Mohon tidak memberikan informasi API Key dan API ID kepada pihak lain.
-                        </li>
-                        <li>Jika terjadi penyalahgunaan API, akun akan kami banned tanpa sepengetahuan.</li>
-                        <li>Semua transaksi pada website ini sudah Ter-Record, gunakan dengan bijak.</li>
-                        <li>Terdapat kebocoran API atau data bukan tanggung jawab kami</li>
-                    </ul>
-                </div>
+    <div class="col-lg-6 mb-2">
+        <div class="card">
+            <div class="card-header">
+                <h5>Perhatian!</h5>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>Demi keamanan akun Anda, Mohon tidak memberikan informasi API Key dan API ID kepada pihak lain.
+                    </li>
+                    <li>Jika terjadi penyalahgunaan API, akun akan kami banned tanpa sepengetahuan.</li>
+                    <li>Semua transaksi pada website ini sudah Ter-Record, gunakan dengan bijak.</li>
+                    <li>Terdapat kebocoran API atau data bukan tanggung jawab kami</li>
+                </ul>
             </div>
         </div>
     </div>
