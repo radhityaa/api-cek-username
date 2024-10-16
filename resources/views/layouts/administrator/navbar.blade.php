@@ -15,7 +15,7 @@
 
     <ul class="menu-inner py-1">
         {{-- Dashboard --}}
-        <li class="menu-item {{ request()->is('dashboard*') ? 'active' : '' }}">
+        <li class="menu-item {{ request()->is('home*') ? 'active' : '' }}">
             <a href="{{ route('home') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-smart-home"></i>
                 <div>Dashboard</div>

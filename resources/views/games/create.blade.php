@@ -36,7 +36,7 @@
                 <div class="mb-4">
                     <label for="description" class="form-label">Keterangan (Opsional)</label>
                     <textarea name="description" id="description" class="form-control @error('description') invalid @enderror"
-                        cols="10" rows="10" placeholder="Keterangan (Opsional)"></textarea>
+                        cols="10" rows="10" placeholder="Keterangan (Opsional)">API Keadaan Normal, Silahkan Gunakan Dengan Bijak</textarea>
                     @error('description')
                         <span class="invalid-feedback">
                             {{ $message }}

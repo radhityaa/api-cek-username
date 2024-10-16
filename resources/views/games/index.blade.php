@@ -22,10 +22,10 @@
             <div class="card-body">
                 <div class="row mb-4">
                     @foreach ($games as $item)
-                        <div class="col-sm-6 col-lg-3">
+                        <div class="col-sm-6 col-lg-3 mb-3">
                             <div class="card h-100 border shadow-none">
                                 <div class="rounded-2 mb-3 text-center">
-                                    <a href="#"><img class="img-fluid"
+                                    <a href="#"><img class="img-thumbnail"
                                             src="{{ asset('assets/img/games/' . $item->picture) }}"
                                             alt="{{ $item->name }}" style="width: 100%; height: 250px;" /></a>
                                 </div>
@@ -55,8 +55,6 @@
                         </div>
                     @endforeach
                 </div>
-
-
                 {{-- <nav aria-label="Page navigation" class="d-flex align-items-center justify-content-center">
                     <ul class="pagination">
                         <li class="page-item prev">

@@ -57,4 +57,44 @@
         </div>
     </div>
     {{-- / Contact Person --}}
+
+    <!-- Modal -->
+    <div class="mt-4">
+        <div class="modal fade" id="modalDonasi" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalDonasiTitle">Donasi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Apabila agan agan ada uang lebih, boleh donasi dengan cara klik tombol "Donasi" di bawah.
+                        </p>
+                        <p>
+                            untuk kebutuhan sewa server, perawatan website, bayar internet dan ngopi heheh.
+                        </p>
+                        <p>
+                            Apabila sudah ber donasi, saya ucapkan terima kasih banyak.
+                        </p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">
+                            Nanti
+                        </button>
+                        <a href="https://saweria.co/radhityas" target="_blank" class="btn btn-primary">Donasi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
+
+@push('page-js')
+    <script>
+        $(document).ready(function() {
+            $('#modalDonasi').modal('show')
+        })
+    </script>
+@endpush
