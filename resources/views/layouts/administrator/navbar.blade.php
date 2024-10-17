@@ -26,12 +26,12 @@
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">User Menu</span>
         </li>
-        <li class="menu-item {{ request()->is('games*') ? 'active' : '' }}">
+        {{-- <li class="menu-item {{ request()->is('games*') ? 'active' : '' }}">
             <a href="{{ route('games.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-device-gamepad-2"></i>
                 <div>Daftar Game</div>
             </a>
-        </li>
+        </li> --}}
         <li class="menu-item {{ request()->is('api*') ? 'active open' : '' }}">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons ti ti-flame"></i>

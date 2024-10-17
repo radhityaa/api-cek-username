@@ -42,9 +42,9 @@ Route::middleware('auth')->group(function () {
         Route::post('generate', [ApiController::class, 'generate'])->name('generate');
     });
 
-    Route::prefix('games')->name('games.')->group(function () {
-        Route::get('', [GameController::class, 'index'])->name('index');
-        Route::get('create', [GameController::class, 'create'])->name('create');
-        Route::post('', [GameController::class, 'store'])->name('store');
-    });
+    // Route::prefix('games')->name('games.')->group(function () {
+    //     Route::get('', [GameController::class, 'index'])->name('index');
+    //     Route::get('create', [GameController::class, 'create'])->name('create');
+    //     Route::post('', [GameController::class, 'store'])->name('store');
+    // });
 });

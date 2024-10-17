@@ -78,12 +78,21 @@
                             Apabila sudah ber donasi, saya ucapkan terima kasih banyak.
                         </p>
 
+                        <script type='text/javascript' src='https://cdn.trakteer.id/js/embed/trbtn.min.js?date=18-11-2023'></script>
+                        <script type='text/javascript'>
+                            (function() {
+                                var trbtnId = trbtn.init('Dukung Saya di Trakteer', '#be1e2d',
+                                    'https://trakteer.id/rama_adhitya_setiadi/tip',
+                                    'https://cdn.trakteer.id/images/embed/trbtn-icon.png?date=18-11-2023', '40');
+                                trbtn.draw(trbtnId);
+                            })();
+                        </script>
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">
                             Nanti
                         </button>
-                        <a href="https://saweria.co/radhityas" target="_blank" class="btn btn-primary">Donasi</a>
                     </div>
                 </div>
             </div>

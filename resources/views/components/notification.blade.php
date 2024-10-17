@@ -1,4 +1,4 @@
-<li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
+<li class="nav-item dropdown-notifications navbar-dropdown dropdown me-xl-1 me-3">
     <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown"
         data-bs-auto-close="outside" aria-expanded="false">
         <i class="ti ti-bell ti-md"></i>
@@ -12,7 +12,7 @@
                     data-bs-placement="top" title="Mark all as read"><i class="ti ti-mail-opened fs-4"></i></a>
             </div>
         </li>
-        <li class="dropdown-notifications-list scrollable-container">
+        {{-- <li class="dropdown-notifications-list scrollable-container">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item list-group-item-action dropdown-notifications-item">
                     <div class="d-flex">
@@ -201,10 +201,10 @@
                     </div>
                 </li>
             </ul>
-        </li>
+        </li> --}}
         <li class="dropdown-menu-footer border-top">
             <a href="javascript:void(0);"
-                class="dropdown-item d-flex justify-content-center text-primary p-2 h-px-40 mb-1 align-items-center">
+                class="dropdown-item d-flex justify-content-center text-primary h-px-40 align-items-center mb-1 p-2">
                 View all notifications
             </a>
         </li>
