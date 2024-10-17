@@ -267,7 +267,7 @@ class CekAccountController extends Controller
         $apiId = $request->header('API-ID');
 
         $user = User::where('api_key', $apiKey)->where('api_id', $apiId)->first();
-        $game = Game::where('slug', 'valorant')->first();
+        $game = Game::where('slug', 'call-of-duty-mobile')->first();
 
         $playerId = $request->playerId;
 
@@ -330,7 +330,7 @@ class CekAccountController extends Controller
         $apiId = $request->header('API-ID');
 
         $user = User::where('api_key', $apiKey)->where('api_id', $apiId)->first();
-        $game = Game::where('slug', 'valorant')->first();
+        $game = Game::where('slug', 'point-blank')->first();
 
         $playerId = $request->playerId;
 
@@ -391,7 +391,7 @@ class CekAccountController extends Controller
         $apiId = $request->header('API-ID');
 
         $user = User::where('api_key', $apiKey)->where('api_id', $apiId)->first();
-        $game = Game::where('slug', 'valorant')->first();
+        $game = Game::where('slug', 'super-sus')->first();
 
         $playerId = $request->playerId;
 
